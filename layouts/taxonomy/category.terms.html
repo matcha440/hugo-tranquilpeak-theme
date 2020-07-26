@@ -104,7 +104,7 @@
                 <ul class="archive-posts">
                   {{ range .Pages.ByDate }}
                     <li class="archive-post">
-                      <a class="archive-post-title" href="{{ .Permalink }}">
+                      <a class="archive-post-title" href="{{ .RelPermalink }}">
                         {{ .Title }}
                       </a>
                       <span class="archive-post-date"> - {{ partial "internal/date" . }}</span>
